@@ -36,7 +36,7 @@ app.use(cors());
 
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/medicineDb")
+  .connect("mongodb+srv://sarmadawan35:DtNplVTmaWuQdS9S@mycluster.cytjjkg.mongodb.net/medicineDb")
   .then(() => console.log('Mongodb connected'))
   .catch((error) => {
     console.log('Mongodb connection failed. exiting now...');
