@@ -10,11 +10,9 @@ let ExpenseSchema = mongoose.Schema({
     ref: "User",
     default:null
 },
-  supplierCode: {
-    type: mongoose.Schema.Types.ObjectId,
-    ref: "Supplier",
-    default:null
-},
+payDate: String,
+lBalance: String,
+cBalance: String,
   type: String,
 },{
   timestamps: true

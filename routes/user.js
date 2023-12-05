@@ -22,6 +22,14 @@ router.get("/getAll", async (req, res) => {
   let user = await User.find();
   res.json(user);
 });
+router.get("/getCustomer", async (req, res) => {
+  let user = await User.find({type: 'user'});
+  res.json(user);
+});
+router.get("/getSuplier", async (req, res) => {
+  let user = await User.find({type: 'suplier'});
+  res.json(user);
+});
 router.get("/getById", async (req, res) => {
   console.log(req.query.id);
   let user = await User.findById(req.query.id);

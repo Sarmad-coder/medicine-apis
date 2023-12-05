@@ -14,7 +14,9 @@ let subCategorySchema = mogoose.Schema({
 
   phone2: String,
   trailBalance: Boolean,
-  accountNo: String
+  accountNo: String,
+  balance:String,
+  type: String,
 })
 let User = mogoose.model("User", subCategorySchema)
 module.exports = User;
